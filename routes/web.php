@@ -12,3 +12,6 @@ Route::get('/category/{cat}/{product_id}', [ProductController::class, 'show'])->
 Route::get('/cart', [CartController::class, 'index'])->name('cartIndex');
 Route::post('/add-to-cart', [CartController::class, 'addToCart'])->name('addToCart');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::get('/checkout', function () {
+    return view('checkOut.index');
+})->name('checkOut');

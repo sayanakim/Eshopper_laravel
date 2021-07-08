@@ -34,12 +34,12 @@
                             <nav class="main_nav">
                                 <ul>
                                     <li class="hassubs active">
-                                        <a href="index.html">Home</a>
+                                        <a href="{{ route('home') }}">Home</a>
                                         <ul>
-                                            <li><a href="/categories.html">Categories</a></li>
-                                            <li><a href="/product.html">Product</a></li>
-                                            <li><a href="/cart.html">Cart</a></li>
-                                            <li><a href="/checkout.html">Check out</a></li>
+                                            <li><a href="#">Categories</a></li>
+                                            <li><a href="#">Product</a></li>
+                                            <li><a href="#">Cart</a></li>
+                                            <li><a href="{{route('checkOut')}}">Check out</a></li>
                                             <li><a href="{{ route('contact') }}">Contact</a></li>
                                         </ul>
                                     </li>
